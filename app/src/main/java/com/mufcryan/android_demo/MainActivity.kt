@@ -1,5 +1,6 @@
 package com.mufcryan.android_demo
 
+import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
-        binding.viewModel = MainViewModel()
+        binding.viewModel = ViewModelProviders.of(this).get(MainViewModel().javaClass)
+        binding.executePendingBindings()
     }
 }
