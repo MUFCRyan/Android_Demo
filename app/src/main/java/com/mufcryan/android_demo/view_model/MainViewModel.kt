@@ -1,5 +1,6 @@
 package com.mufcryan.android_demo.view_model
 
+import android.arch.lifecycle.MutableLiveData
 import android.arch.lifecycle.ViewModel
 import android.databinding.ObservableField
 import com.mufcryan.android_demo.bean.Repository
@@ -15,7 +16,8 @@ class MainViewModel: ViewModel() {
     val repoModel = RepoModel()
     val text = ObservableField("Old data")
     val isLoading = ObservableField(false)
-    var repositories = ArrayList<Repository>()
+    var repositories = MutableLiveData<ArrayList<Repository>>()
+    var url = MutableLiveData<String>()
 
     fun refreshData(){
         isLoading.set(true)
@@ -32,7 +34,7 @@ class MainViewModel: ViewModel() {
         repoModel.getRepositories(object : OnRepositoryReadyCallback {
             override fun onDataReady(data: ArrayList<Repository>) {
                 isLoading.set(false)
-                repositories = data
+                repositories.value = data
             }
         })
     }
