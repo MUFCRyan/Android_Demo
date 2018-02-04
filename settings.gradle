@@ -1,1 +1,1 @@
-include ':app', ':composite_webview'
+include ':app', ':composite_webview', ':audio_video', ':sdl2'

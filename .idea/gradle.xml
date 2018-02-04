@@ -9,7 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/audio_video" />
             <option value="$PROJECT_DIR$/composite_webview" />
+            <option value="$PROJECT_DIR$/sdl2" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
