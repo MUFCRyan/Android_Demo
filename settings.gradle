@@ -1,1 +1,2 @@
 include ':app', ':composite_webview', ':audio_video', ':sdl2'
+include ':apm_aspectj'

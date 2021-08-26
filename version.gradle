@@ -1,0 +1,6 @@
+ext.versions = [:]
+
+// 定义版本号们
+versions.aspectjx="2.0.2"
+versions.aspectjrt="1.8.+"
+versions.argusapm="3.0.1.1001"
