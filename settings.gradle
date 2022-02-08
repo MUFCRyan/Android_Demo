@@ -1,2 +1,5 @@
 include ':app', ':composite_webview', ':audio_video', ':sdl2'
 include ':apm_aspectj'
+include ':deeplink-annotation'
+include ':deeplink-compiler2'
+include ':deeplink-gradle'

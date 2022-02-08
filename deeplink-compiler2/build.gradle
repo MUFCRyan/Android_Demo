@@ -1,0 +1,20 @@
+plugins {
+    id 'java-library'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //自动生成 META-INF
+    api 'com.google.auto.service:auto-service:1.0-rc6'
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc6'    //动态生成Java 代码
+    api 'com.squareup:javapoet:1.13.0'
+    implementation project(':deeplink-annotation')
+    api 'org.dom4j:dom4j:2.1.1'
+    implementation 'org.slf4j:slf4j-nop:1.7.35'
+    compileOnly gradleApi()
+}

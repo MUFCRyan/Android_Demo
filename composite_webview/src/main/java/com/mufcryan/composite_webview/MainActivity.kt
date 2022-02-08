@@ -9,10 +9,6 @@ import android.webkit.WebViewClient
 import kotlinx.android.synthetic.main.activity_main.*
 
 
-
-
-
-
 class MainActivity : AppCompatActivity() {
 
     private val mWebView: WebView? = null
@@ -24,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         webView.settings.javaScriptEnabled = true
         mMyJavaScriptInterface = WebAppInterface()
-        webView.addJavascriptInterface(mMyJavaScriptInterface, "AndroidFunction")
+        //webView.addJavascriptInterface(mMyJavaScriptInterface, "AndroidFunction")
         webView.webViewClient = WebClient()
         var url1 = "http://h5.sns.ivydad.com.cn/detail/297?name=文章详情"
         var url2 = "http://exploiter.ivydad.com/invite/newFriend/e2cf0e15547711e68ed590e2baab7e5c"

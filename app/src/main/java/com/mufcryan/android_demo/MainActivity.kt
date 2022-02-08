@@ -10,7 +10,9 @@ import com.mufcryan.android_demo.adapter.RepositoryRecyclerViewAdapter
 import com.mufcryan.android_demo.bean.Repository
 import com.mufcryan.android_demo.databinding.ActivityMainBinding
 import com.mufcryan.android_demo.view_model.MainViewModel
+import com.mufcryan.deeplink_annotation.DeeplinkAnnotation
 
+@DeeplinkAnnotation(scheme = "test", host = "demo", pathPrefix = "/MainActivity")
 class MainActivity : AppCompatActivity(), RepositoryRecyclerViewAdapter.OnItemClickListener {
     private lateinit var binding: ActivityMainBinding
     private var mAdapter = RepositoryRecyclerViewAdapter(arrayListOf(), this)
