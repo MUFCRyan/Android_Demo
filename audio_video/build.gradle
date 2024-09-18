@@ -44,5 +44,5 @@ dependencies {
     implementation 'tv.danmaku.ijk.media:ijkplayer-x86:0.6.1'
 
     // ExoPlayer as IMediaPlayer: optional, experimental
-    implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.4.5.1'
+    // implementation 'tv.danmaku.ijk.media:ijkplayer-exo:0.4.5.1'
 }

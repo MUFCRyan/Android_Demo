@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 //apply plugin: 'com.hujiang.android-aspectjx'
-apply plugin: 'argusapm'
+// apply plugin: 'argusapm'
 
 android {
     compileSdk 30
